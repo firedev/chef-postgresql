@@ -19,8 +19,6 @@
 # limitations under the License.
 #
 
-::Chef::Recipe.send(:include, Opscode::OpenSSL::Password)
-
 include_recipe "postgresql::client"
 
 # Include the right "family" recipe for installing the server
